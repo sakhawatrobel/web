@@ -48,8 +48,8 @@ ul { padding-left: 1.15rem; }
 }
 
 .site-header.scrolled .brand-mark {
-  width: 220px;
-  height: 46px;
+  width: 185px;
+  height: 38px;
 }
 .nav-shell { width: min(var(--content), calc(100% - 2rem)); min-height: 74px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .brand-mark { width: clamp(220px, 24vw, 292px); height: 58px; display: block; flex: 0 1 auto; background: url("sakhawat-robel-logo.png") left center / contain no-repeat; }
@@ -227,7 +227,7 @@ ul { padding-left: 1.15rem; }
   .footer-main { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
  .site-header.scrolled .nav-links {
-  top: 60px;
+  top: 50px;
 }
   @keyframes menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 }
