@@ -44,7 +44,7 @@ ul { padding-left: 1.15rem; }
 }
 
 .site-header.scrolled .nav-shell {
-  min-height: 60px;
+  min-height: 50px;
 }
 
 .site-header.scrolled .brand-mark {
