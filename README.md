@@ -1,9 +1,9 @@
-<!-- Portfolio website v1.2.0: README begins. -->
-# Sakhawat Hossan Robel Portfolio v1.2.0
+<!-- Portfolio website v1.3.0: README begins. -->
+# Sakhawat Hossan Robel Portfolio v1.3.0
 
 This static multi-page academic portfolio is ready for GitHub Pages.
 
-Version 1.2.0 refines typography and spacing across every page, restores all substantive material from the supplied brief, adds six brief-sourced project visuals, expands research and project details, adds Google Scholar and LinkedIn links, introduces a structured professional footer, and adds accessible reveal, menu, image, card, button, and navigation motion.
+Version 1.3.0 adds the supplied personal brand lockup to the header and footer, replaces the footer location label with LinkedIn, email, and Google Scholar controls, introduces left-to-right button color transitions, and aligns the focus and technical-skill panels with the rounded interactive card system used across the site.
 
 Upload every file and the complete `project-images` folder to the repository root. In GitHub, open **Settings > Pages**, choose **Deploy from a branch**, select the `main` branch and `/ (root)`, then save.
-<!-- Portfolio website v1.2.0: README ends. -->
+<!-- Portfolio website v1.3.0: README ends. -->

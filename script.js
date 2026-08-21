@@ -1,4 +1,4 @@
-// Portfolio website v1.2.0: shared interactions begin.
+// Portfolio website v1.3.0: shared interactions begin.
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
@@ -11,6 +11,29 @@ const setHeaderState = () => {
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
 yearNodes.forEach((node) => { node.textContent = new Date().getFullYear(); });
+
+const footerLocation = document.querySelector(".footer-bottom-inner p:last-child");
+if (footerLocation) {
+  const footerSocials = document.createElement("div");
+  footerSocials.className = "footer-socials";
+  footerSocials.setAttribute("aria-label", "Academic and social profiles");
+  footerSocials.innerHTML = `
+    <a class="footer-social-icon" href="https://www.linkedin.com/in/sakhawat-hossan-robel-b72205234" target="_blank" rel="noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+      <i data-lucide="linkedin" data-fallback="in"></i><span class="sr-only">LinkedIn</span>
+    </a>
+    <a class="footer-social-icon" href="mailto:sakhawathossanrobel@gmail.com" aria-label="Email Sakhawat Hossan Robel" title="Email">
+      <i data-lucide="mail" data-fallback="@"></i><span class="sr-only">Email</span>
+    </a>
+    <a class="footer-social-icon" href="https://scholar.google.com/citations?hl=en&user=4PLuLYYAAAAJ" target="_blank" rel="noreferrer" aria-label="Google Scholar profile" title="Google Scholar">
+      <i data-lucide="graduation-cap" data-fallback="G"></i><span class="sr-only">Google Scholar</span>
+    </a>`;
+  footerLocation.replaceWith(footerSocials);
+
+  const lucideScript = document.createElement("script");
+  lucideScript.src = "https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js";
+  lucideScript.onload = () => window.lucide?.createIcons();
+  document.head.appendChild(lucideScript);
+}
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
@@ -59,4 +82,4 @@ filters.forEach((button) => {
     });
   });
 });
-// Portfolio website v1.2.0: shared interactions end.
+// Portfolio website v1.3.0: shared interactions end.
