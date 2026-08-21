@@ -1,4 +1,4 @@
-// Portfolio website v1.0.0: interaction layer begins.
+// Portfolio website v1.0.1: interaction layer begins.
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
@@ -56,4 +56,4 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealNodes.forEach((node) => revealObserver.observe(node));
-// Portfolio website v1.0.0: interaction layer ends.
+// Portfolio website v1.0.1: interaction layer ends.
