@@ -1,45 +1,7 @@
-// Portfolio website v1.0.3: interaction layer begins.
-const header = document.querySelector("[data-header]");
-const navToggle = document.querySelector("[data-nav-toggle]");
-const navMenu = document.querySelector("[data-nav-menu]");
-const yearNode = document.querySelector("[data-year]");
-const filters = document.querySelectorAll("[data-filter]");
-const publications = document.querySelectorAll("[data-category]");
-
-const setHeaderState = () => {
-  header.classList.toggle("scrolled", window.scrollY > 18);
-};
-
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
-
-if (yearNode) {
-  yearNode.textContent = new Date().getFullYear();
-}
-
-if (navToggle && navMenu) {
-  navToggle.addEventListener("click", () => {
-    const isOpen = navMenu.classList.toggle("open");
-    navToggle.setAttribute("aria-expanded", String(isOpen));
-  });
-
-  navMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-      navToggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-filters.forEach((button) => {
-  button.addEventListener("click", () => {
-    const activeFilter = button.dataset.filter;
-    filters.forEach((item) => item.classList.toggle("active", item === button));
-    publications.forEach((publication) => {
-      const shouldShow = activeFilter === "all" || publication.dataset.category === activeFilter;
-      publication.classList.toggle("is-hidden", !shouldShow);
-    });
-  });
-});
-
-// Portfolio website v1.0.3: interaction layer ends.
+// Portfolio website v1.1.0: shared interactions begin.
+const header=document.querySelector("[data-header]");const navToggle=document.querySelector("[data-nav-toggle]");const navMenu=document.querySelector("[data-nav-menu]");const yearNode=document.querySelector("[data-year]");
+const setHeaderState=()=>{if(header)header.classList.toggle("scrolled",window.scrollY>18)};setHeaderState();window.addEventListener("scroll",setHeaderState,{passive:true});if(yearNode)yearNode.textContent=new Date().getFullYear();
+if(navToggle&&navMenu){navToggle.addEventListener("click",()=>{const isOpen=navMenu.classList.toggle("open");navToggle.setAttribute("aria-expanded",String(isOpen));navToggle.setAttribute("aria-label",isOpen?"Close navigation":"Open navigation")})}
+const revealNodes=document.querySelectorAll(".reveal");if("IntersectionObserver" in window){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target)}})},{threshold:.08});revealNodes.forEach(node=>observer.observe(node))}else{revealNodes.forEach(node=>node.classList.add("is-visible"))}
+const filters=document.querySelectorAll("[data-filter]");const publications=document.querySelectorAll("[data-category]");filters.forEach(button=>{button.addEventListener("click",()=>{const activeFilter=button.dataset.filter;filters.forEach(item=>{const isActive=item===button;item.classList.toggle("active",isActive);item.setAttribute("aria-pressed",String(isActive))});publications.forEach(publication=>{const shouldShow=activeFilter==="all"||publication.dataset.category===activeFilter;publication.classList.toggle("is-hidden",!shouldShow)})})});
+// Portfolio website v1.1.0: shared interactions end.

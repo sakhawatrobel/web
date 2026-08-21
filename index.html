@@ -1,319 +1,41 @@
-<!-- Portfolio website v1.0.3: main document begins. -->
+<!-- Portfolio website v1.1.0: home page begins. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Academic portfolio of Sakhawat Hossan Robel, a mechanical engineer focused on CFD, molecular dynamics, finite element analysis, nanomaterials, biomaterials, and thermal systems.">
-  <title>Sakhawat Hossan Robel | Mechanical Engineering PhD Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Sakhawat Hossan Robel | Mechanical Engineering Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1.1.0">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header" data-header>
-    <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand-mark" href="#home" aria-label="Sakhawat Hossan Robel home">
-        <img src="./robel-photo.jpeg" alt="Sakhawat Hossan Robel">
-        <strong>Sakhawat Hossan Robel</strong>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <div class="nav-links" id="primary-menu" data-nav-menu>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
+  <header class="site-header" data-header><nav class="nav-shell" aria-label="Primary navigation">
+    <a class="brand-mark" href="index.html" aria-label="Sakhawat Hossan Robel home"><img src="robel-photo.jpeg" alt=""><strong>Sakhawat Hossan Robel</strong></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="primary-menu" data-nav-menu><a href="about.html">About</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a></div>
+  </nav></header>
   <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-content reveal">
-        <div class="hero-text">
-          <p class="eyebrow">Mechanical Engineer · Simulation Researcher · PhD Applicant</p>
-          <h1>Sakhawat Hossan Robel</h1>
-          <p class="hero-copy">
-            Computational mechanical engineer working across CFD, molecular dynamics, FEA, nanomaterials,
-            biomaterials, polymer electrolytes, and passive thermal management.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#research">Explore Research</a>
-            <a class="button secondary" href="./cv.pdf" target="_blank" rel="noopener">Download CV</a>
-          </div>
-        </div>
-        <aside class="portrait-card" aria-label="Portrait">
-          <img src="./robel-photo.jpeg" alt="Sakhawat Hossan Robel">
-        </aside>
-        <dl class="hero-stats" aria-label="Academic highlights">
-          <div>
-            <dt>6</dt>
-            <dd>Journal & conference works</dd>
-          </div>
-          <div>
-            <dt>3.77/4</dt>
-            <dd>Last 60 credits GPA</dd>
-          </div>
-          <div>
-            <dt>CFD · MD · FEA</dt>
-            <dd>Core simulation stack</dd>
-          </div>
-        </dl>
+    <section class="home-hero"><div class="home-hero-inner">
+      <div class="hero-copy-block"><p class="eyebrow light">Mechanical Engineer · Simulation Researcher · PhD Applicant</p><h1>Sakhawat<br>Hossan Robel</h1><p class="hero-summary">Computational mechanical engineer working across CFD, molecular dynamics, finite element analysis, nanomaterials, biomaterials, polymer electrolytes, and passive thermal management.</p>
+        <div class="button-row"><a class="button primary" href="research.html">Explore research <span aria-hidden="true">→</span></a><a class="button ghost" href="cv.pdf" download>Download CV</a></div>
       </div>
+      <dl class="hero-facts" aria-label="Academic highlights"><div><dt>3.77 / 4.00</dt><dd>GPA in last 60 credits</dd></div><div><dt>CFD · MD · FEA</dt><dd>Core simulation methods</dd></div><div><dt>Sylhet, Bangladesh</dt><dd>Current location</dd></div></dl>
+    </div></section>
+    <section class="section overview-section">
+      <div class="two-column reveal"><div><p class="eyebrow">Research profile</p><h2>Modeling material behavior and thermal systems across scales.</h2></div><div class="prose"><p>Robel is a mechanical engineer from Shahjalal University of Science and Technology with hands-on experience in computer simulation, mechanical design, scientific writing, and data analysis.</p><p>His work connects atomistic material behavior, passive thermal systems, and biomedical device mechanics.</p><a class="text-link" href="about.html">Read the full profile <span aria-hidden="true">→</span></a></div></div>
+      <div class="focus-grid"><article class="focus-card reveal"><span>01</span><h3>Molecular Dynamics</h3><p>Doped graphene, fracture behavior, thermal conductivity, polymer electrolytes, RDF, MSD, and cluster analysis.</p></article><article class="focus-card reveal"><span>02</span><h3>Thermal Systems CFD</h3><p>Transient CFD, phase change materials, passive cooling, conjugate heat transfer, and climate-driven boundary conditions.</p></article><article class="focus-card reveal"><span>03</span><h3>Biomechanics &amp; FEA</h3><p>Polymeric heart valve leaflets, reinforcement strategies, CAD modeling, SEM image analysis, and durability-focused design.</p></article></div>
     </section>
-
-    <section class="intro-band" id="about">
-      <div class="section-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow dark">About</p>
-          <h2>Seeking a U.S. PhD path in advanced simulation and experimental mechanical/materials research.</h2>
-        </div>
-        <div class="intro-copy reveal">
-          <p>
-            Robel is a mechanical engineer from Shahjalal University of Science and Technology with hands-on
-            research experience in computer simulation, mechanical design, scientific writing, and data analysis.
-            His work connects atomistic material behavior, thermal systems, and biomedical device mechanics.
-          </p>
-          <p>
-            He is especially interested in research groups where rigorous modeling meets experimental insight:
-            molecular dynamics of 2D materials and polymer electrolytes, CFD for passive cooling, finite element
-            analysis of biomaterials, and multiphysics simulation for real engineering systems.
-          </p>
-        </div>
-      </div>
+    <section class="section dark-band"><div class="section-heading reveal"><p class="eyebrow light">Selected research</p><h2>Research grounded in simulation depth and engineering outcomes.</h2></div>
+      <div class="feature-grid"><article class="feature-card reveal"><p class="card-label">Passive cooling · CFD</p><h3>Dual-Layer PCM Roofs</h3><p>Developing a 3D CFD model in ANSYS Fluent to evaluate dual-layer PCM roofs in hot-humid climates using climatic data from Dhaka, Cox's Bazar, and Jashore.</p></article><article class="feature-card reveal"><p class="card-label">Nanomaterials · MD</p><h3>Doped Graphene</h3><p>Built LAMMPS models for N, B, B-N, and Si-doped graphene to investigate mechanical strength, stiffness, thermal transport, and fracture mechanisms.</p></article><article class="feature-card reveal"><p class="card-label">Biomaterials · CAD</p><h3>Polymeric Heart Valves</h3><p>Developed SolidWorks CAD models of fiber-reinforced polymeric heart valves and analyzed SEM images of biomaterial particle size using ImageJ.</p></article></div><div class="section-action"><a class="button outline-light" href="research.html">View research experience <span aria-hidden="true">→</span></a></div>
     </section>
-
-    <section class="focus-strip" aria-label="Research focus areas">
-      <article class="focus-item reveal">
-        <span>01</span>
-        <h3>Molecular Dynamics</h3>
-        <p>Doped graphene, fracture behavior, thermal conductivity, polymer electrolytes, RDF, MSD, and cluster analysis.</p>
-      </article>
-      <article class="focus-item reveal">
-        <span>02</span>
-        <h3>Thermal Systems CFD</h3>
-        <p>3D transient CFD, phase change materials, passive cooling, conjugate heat transfer, and climate-driven boundary conditions.</p>
-      </article>
-      <article class="focus-item reveal">
-        <span>03</span>
-        <h3>Biomechanics & FEA</h3>
-        <p>Polymeric heart valve leaflets, reinforcement strategies, CAD modeling, SEM image analysis, and durability-focused design.</p>
-      </article>
-    </section>
-
-    <section class="section" id="research">
-      <div class="section-title reveal">
-        <p class="eyebrow dark">Research Experience</p>
-        <h2>Research built around simulation depth and engineering outcomes.</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-card reveal">
-          <time>May 2025 - Present</time>
-          <h3>Research Assistant, SUST</h3>
-          <p class="meta">Advisor: Mohammad Junaid, Lecturer, Mechanical Engineering</p>
-          <p>Developing a 3D CFD model in ANSYS Fluent to evaluate dual-layer PCM roofs for passive cooling in hot-humid climates using real climatic data from Dhaka, Cox's Bazar, and Jashore.</p>
-        </article>
-        <article class="timeline-card reveal">
-          <time>Nov 2024 - May 2025</time>
-          <h3>Undergraduate Research Assistant, SUST</h3>
-          <p class="meta">Advisor: Dr. Nuruzzaman Sakib, Associate Professor</p>
-          <p>Built LAMMPS models for N, B, B-N, and Si-doped graphene to investigate mechanical strength, stiffness, thermal transport, and fracture mechanisms.</p>
-        </article>
-        <article class="timeline-card reveal">
-          <time>Jan 2023 - Jun 2024</time>
-          <h3>Undergraduate Research Assistant, Colorado State University</h3>
-          <p class="meta">Advisor: Dr. Nipa Khair, YoungHeartValve Inc.</p>
-          <p>Developed SolidWorks CAD models of fiber-reinforced polymeric heart valves and analyzed SEM images of biomaterial particle size using ImageJ.</p>
-        </article>
-        <article class="timeline-card reveal">
-          <time>Jan 2024 - Sep 2025</time>
-          <h3>Head, Mechanical Design Team - SUST Auto Drive</h3>
-          <p class="meta">Autonomous vehicle project, Shahjalal University of Science and Technology</p>
-          <p>Led a five-member mechanical design team in CAD modeling, GD&T, chassis fabrication, and design-for-manufacturing collaboration with sensor integration teams.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section split-section">
-      <div class="education-panel reveal">
-        <p class="eyebrow dark">Education</p>
-        <h2>B.Sc. in Mechanical Engineering</h2>
-        <p>Shahjalal University of Science and Technology, Sylhet, Bangladesh</p>
-        <div class="education-grid">
-          <div><strong>CGPA</strong><span>3.56 / 4.00</span></div>
-          <div><strong>Last 60 Credits</strong><span>3.77 / 4.00</span></div>
-          <div><strong>Duration</strong><span>Mar 2022 - Jun 2026</span></div>
-        </div>
-      </div>
-      <div class="thesis-panel reveal">
-        <h3>Senior Thesis</h3>
-        <p>Computational investigation of dopant-induced mechanical, thermal, and fracture characteristics of Ti-, Si-, and Ti-Si-doped monolayer graphene via molecular dynamics simulation.</p>
-        <h3>Junior Project</h3>
-        <p>Development and fabrication of an Arduino-based autonomous fire-fighting robot capable of detecting and extinguishing fire without human intervention.</p>
-      </div>
-    </section>
-
-    <section class="section publication-section" id="publications">
-      <div class="section-title reveal">
-        <p class="eyebrow dark">Publications</p>
-        <h2>Peer-reviewed, submitted, conference, and in-progress research outputs.</h2>
-      </div>
-      <div class="filter-bar reveal" aria-label="Publication filters">
-        <button class="filter active" type="button" data-filter="all">All</button>
-        <button class="filter" type="button" data-filter="journal">Journal</button>
-        <button class="filter" type="button" data-filter="conference">Conference</button>
-        <button class="filter" type="button" data-filter="progress">In Progress</button>
-      </div>
-      <div class="publication-list">
-        <article class="publication reveal" data-category="journal">
-          <span>Journal · Wiley · 2026</span>
-          <h3>CFD Analysis of Dual-Layer PCM Roofs for Thermal Mitigation in Residential Buildings</h3>
-          <p>Md Junaid, Sakhawat Hossan Robel, Mahmud Or-Rashid, Pabel Shahrear, Md Shajedul Karim, Suvash C Saha, Goutam Saha.</p>
-          <a href="https://doi.org/10.1002/htj.70191" target="_blank" rel="noopener">DOI: 10.1002/htj.70191</a>
-        </article>
-        <article class="publication reveal" data-category="journal">
-          <span>Journal · Elsevier · 2025</span>
-          <h3>Parametric Finite Element Modeling of Reinforced Polymeric Leaflets for Improved Durability</h3>
-          <p>Nipa Khair, Sanchita Bhat, Sakhawat Hossan Robel, Srujana Joshi, Katie Vinterella, Lakshmi Dasi, Susan James.</p>
-          <a href="https://doi.org/10.1016/j.jmbbm.2024.106884" target="_blank" rel="noopener">DOI: 10.1016/j.jmbbm.2024.106884</a>
-        </article>
-        <article class="publication reveal" data-category="journal">
-          <span>Submitted · Springer</span>
-          <h3>Thermal Performance of PCM-Integrated Roofs for Passive Cooling in Tropical Climates: A 3D Numerical Study</h3>
-          <p>Sakhawat Hossan Robel, Mohammad Junaid, Pabel Shahrear, Md Shajedul Karim, Suvash C. Saha.</p>
-        </article>
-        <article class="publication reveal" data-category="conference">
-          <span>Conference · ICME 2025</span>
-          <h3>Effect of Si Doping on Mechanical, Thermal, and Fracture Behavior of Monolayer Graphene: A Molecular Dynamics Approach</h3>
-          <p>Sakhawat Hossan Robel, Nuruzzaman Sakib.</p>
-          <a href="https://doi.org/10.2139/ssrn.6201278" target="_blank" rel="noopener">DOI: 10.2139/ssrn.6201278</a>
-        </article>
-        <article class="publication reveal" data-category="conference">
-          <span>Conference · JACC · 2025</span>
-          <h3>TCT-875 Parametric Finite Element Modeling of Reinforced Polymeric Leaflets for Improved Durability</h3>
-          <p>Nipa Khair, Sanchita Bhat, Sakhawat Hossan Robel, Srujana Joshi, Katie Vinterella, Lakshmi Dasi, Susan James.</p>
-          <a href="https://www.jacc.org/doi/abs/10.1016/j.jacc.2025.09.1062" target="_blank" rel="noopener">JACC abstract</a>
-        </article>
-        <article class="publication reveal" data-category="progress">
-          <span>In progress</span>
-          <h3>Enhancing Ionic Transport in Cross-linked PEO-LiTFSI Polymer Electrolytes: A Molecular Dynamics Study</h3>
-          <p>Sakhawat Hossan Robel, Kamrul Hasan.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section project-section" id="projects">
-      <div class="section-title reveal">
-        <p class="eyebrow dark">Selected Projects</p>
-        <h2>From atomistic simulation to climate-responsive thermal design.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <span>Published CFD Study</span>
-          <h3>Dual-Layer PCM Roofs</h3>
-          <p>Built a 3D transient CFD model using the enthalpy-porosity approach to simulate phase change in a Rubitherm RT-31 roof assembly under Bangladeshi climate conditions.</p>
-          <ul>
-            <li>Reduced peak ceiling temperature by up to 6.6 K.</li>
-            <li>Delayed thermal peaks by 2-3 hours.</li>
-            <li>Estimated cooling energy reduction of roughly 30%.</li>
-          </ul>
-        </article>
-        <article class="project-card reveal">
-          <span>Thesis · Molecular Dynamics</span>
-          <h3>PEO-LiTFSI Polymer Electrolytes</h3>
-          <p>Investigating ionic transport in cross-linked solid polymer electrolytes with LAMMPS and OPLS-AA force-field parameterization.</p>
-          <ul>
-            <li>Built linear PEO-LiTFSI systems of about 30,080 atoms.</li>
-            <li>Ran minimization, NPT equilibration, and NVT production.</li>
-            <li>Analyzing RDF, MSD, and ion clustering behavior.</li>
-          </ul>
-        </article>
-        <article class="project-card reveal">
-          <span>Conference · Nanomaterials</span>
-          <h3>Si-Doped Graphene</h3>
-          <p>Used LAMMPS and Tersoff parameterizations to examine how 1-5% Si doping changes monolayer graphene mechanics and thermal transport.</p>
-          <ul>
-            <li>Observed decreasing strength and conductivity with doping.</li>
-            <li>Visualized crack initiation and propagation in OVITO.</li>
-            <li>Validated pristine graphene properties against literature.</li>
-          </ul>
-        </article>
-        <article class="project-card reveal">
-          <span>Biomedical FEA</span>
-          <h3>Polymeric Heart Valve Leaflets</h3>
-          <p>Contributed CAD modeling and analysis to a reinforced polymeric leaflet study focused on durability and hydrodynamic performance.</p>
-          <ul>
-            <li>Supported fiber-reinforcement design evaluation.</li>
-            <li>Improved durability reported up to 73 million AWT cycles.</li>
-            <li>Connected modeling output to device performance goals.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="section skills-section">
-      <div class="section-title reveal">
-        <p class="eyebrow dark">Skills</p>
-        <h2>Simulation, design, programming, and analysis tools.</h2>
-      </div>
-      <div class="skills-grid reveal">
-        <div>
-          <h3>Modeling & Simulation</h3>
-          <p>ANSYS Fluent, LAMMPS, conjugate heat transfer, phase change, turbulence modeling, MD force-field scripting, tensile loading, thermal conductivity.</p>
-        </div>
-        <div>
-          <h3>CAD & Design</h3>
-          <p>SolidWorks, AutoCAD, 2D drawing, 3D modeling, assembly, GD&T, design for manufacturing, chassis fabrication.</p>
-        </div>
-        <div>
-          <h3>Programming</h3>
-          <p>Python, MATLAB, Arduino, data processing, visualization, materials modeling, ODE solving, automation and control.</p>
-        </div>
-        <div>
-          <h3>Analysis & Visualization</h3>
-          <p>OVITO, Tecplot, ImageJ, MD trajectory analysis, defect identification, atomic strain visualization, microscopy particle sizing.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section credential-section">
-      <div class="credential-card reveal">
-        <p class="eyebrow dark">Training & Service</p>
-        <h2>Technical leadership with teaching and outreach experience.</h2>
-        <div class="credential-list">
-          <p><strong>Industrial Training:</strong> Shahjalal Fertilizer Company Limited, with exposure to process control, plant operations, safety protocols, and quality systems.</p>
-          <p><strong>Certifications:</strong> Certified SolidWorks Associate - Mechanical Design; 3DEXPERIENCE Associate - Collaborative CAD platform.</p>
-          <p><strong>Leadership:</strong> Assistant General Secretary, Binary SUST; Executive Member, Binary SUST; instructional sessions on systematic literature review and research methodology.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Open to PhD conversations in mechanical engineering, materials, and simulation-driven research.</h2>
-        <p>Based in Sylhet, Bangladesh. Seeking PhD opportunities in the United States.</p>
-        <div class="contact-actions">
-          <a class="button primary" href="mailto:sakhawathossanrobel@gmail.com">Email Robel</a>
-          <a class="button secondary light" href="./cv.pdf" target="_blank" rel="noopener">View CV</a>
-        </div>
-      </div>
-    </section>
+    <section class="section latest-section"><div class="section-heading reveal"><p class="eyebrow">Research outputs</p><h2>Recent publications and conference work.</h2></div><div class="publication-preview"><article class="publication-row reveal"><div><span class="publication-type">Journal · Wiley · 2026</span><h3>CFD Analysis of Dual-Layer PCM Roofs for Thermal Mitigation in Residential Buildings</h3></div><a href="https://doi.org/10.1002/htj.70191" target="_blank" rel="noopener" aria-label="Open DOI for CFD Analysis of Dual-Layer PCM Roofs">DOI ↗</a></article><article class="publication-row reveal"><div><span class="publication-type">Journal · Elsevier · 2025</span><h3>Parametric Finite Element Modeling of Reinforced Polymeric Leaflets for Improved Durability</h3></div><a href="https://doi.org/10.1016/j.jmbbm.2024.106884" target="_blank" rel="noopener" aria-label="Open DOI for Parametric Finite Element Modeling">DOI ↗</a></article></div><a class="text-link" href="publications.html">See all research outputs <span aria-hidden="true">→</span></a></section>
+    <section class="contact-cta"><div class="contact-cta-inner reveal"><p class="eyebrow light">Contact</p><h2>Open to PhD conversations in mechanical engineering, materials, and simulation-driven research.</h2><div class="button-row"><a class="button primary" href="mailto:sakhawathossanrobel@gmail.com">Email Robel</a><a class="button ghost" href="contact.html">Contact details</a></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span data-year></span> Sakhawat Hossan Robel. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="site-footer"><p>© <span data-year></span> Sakhawat Hossan Robel. Mechanical engineering research portfolio.</p></footer>
+  <script src="script.js?v=1.1.0"></script>
 </body>
 </html>
-<!-- Portfolio website v1.0.3: main document ends. -->
+<!-- Portfolio website v1.1.0: home page ends. -->

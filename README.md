@@ -1,17 +1,18 @@
-<!-- Portfolio website v1.0.3: README begins. -->
-# Sakhawat Hossan Robel Portfolio v1.0.3
+<!-- Portfolio website v1.1.0: README begins. -->
+# Sakhawat Hossan Robel Portfolio v1.1.0
 
-This is a static academic portfolio website for Sakhawat Hossan Robel, prepared for PhD application visibility.
+This static, multi-page academic portfolio is ready for GitHub Pages.
 
-Open `index.html` in a browser to view the site. The CV and portrait are included in the `assets` folder.
+## Pages
 
-Version `v1.0.3` removes JavaScript-dependent content hiding and uses a stable hero layout for GitHub Pages.
+- `index.html` - concise homepage
+- `about.html` - profile, education, skills, training, and service
+- `research.html` - research experience and focus areas
+- `publications.html` - publications with category filters
+- `projects.html` - selected research projects
+- `contact.html` - email, location, research interests, and CV access
 
-## Included Files
+Keep every file in the repository root. In GitHub, open **Settings > Pages**, choose **Deploy from a branch**, select the `main` branch and `/ (root)`, then save.
 
-- `index.html` - Main portfolio page
-- `styles.css` - Responsive visual design
-- `script.js` - Navigation, filtering, and reveal interactions
-- `robel-photo.jpeg` - Portrait image
-- `cv.pdf` - Downloadable CV
-<!-- Portfolio website v1.0.3: README ends. -->
+Version `v1.1.0` adds dedicated pages, a higher-contrast image-led hero, cache-versioned CSS and JavaScript, safe reveal motion, hover transitions, active navigation, and working CV download links.
+<!-- Portfolio website v1.1.0: README ends. -->
