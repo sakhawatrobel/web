@@ -1,11 +1,10 @@
-// Portfolio website v1.0.2: interaction layer begins.
+// Portfolio website v1.0.3: interaction layer begins.
 const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const navMenu = document.querySelector("[data-nav-menu]");
 const yearNode = document.querySelector("[data-year]");
 const filters = document.querySelectorAll("[data-filter]");
 const publications = document.querySelectorAll("[data-category]");
-const revealNodes = document.querySelectorAll(".reveal");
 
 const setHeaderState = () => {
   header.classList.toggle("scrolled", window.scrollY > 18);
@@ -43,17 +42,4 @@ filters.forEach((button) => {
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 }
-);
-
-revealNodes.forEach((node) => revealObserver.observe(node));
-// Portfolio website v1.0.2: interaction layer ends.
+// Portfolio website v1.0.3: interaction layer ends.
